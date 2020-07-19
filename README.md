@@ -10,5 +10,5 @@ Datasets are from Stanford U, contains ~ 660,918 tag SNPs (Illumina HuHap 650k),
 if (!require(devtools)) {
     install.packages("devtools")
 }
-devtools::install_github("Erickcufe/hgdp")
+devtools::install_github("Erickcufe/hgdp", ref = "erick")
 ```
