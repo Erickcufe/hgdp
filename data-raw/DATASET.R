@@ -696,6 +696,6 @@ usethis::use_data(Yoruba_Nigeria, overwrite = TRUE)
 
 
 
+Summary_data <- readr::read_csv("lat_lon_population.csv")
 
-
-
+usethis::use_data(Summary_data, overwrite = TRUE)
