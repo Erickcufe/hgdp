@@ -12,3 +12,19 @@ if (!require(devtools)) {
 }
 devtools::install_github("Erickcufe/hgdp", ref = "erick")
 ```
+
+```{r}
+
+estudios <- hgdp::Summary_data
+
+leaflet::leaflet() %>% 
+  leaflet::addTiles() %>% 
+  leaflet::addCircleMarkers(estudios$Longitude, estudios$Latitude,
+                            weight = 19, radius = 2, 
+                            fillOpacity = 0.9,
+                            color = "darkcyan",
+                            popup = paste(sep = " ", "HGDP", "<br/>",
+                                          "Population:", estudios$Population,"<br/>",
+                                          "Size:", estudios$n))
+
+```
