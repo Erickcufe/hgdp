@@ -126,7 +126,7 @@ Balochi_Pakistan <- search_mongo(IDs_balochi) %>%
 usethis::use_data(Balochi_Pakistan, overwrite = TRUE)
 
 # -------
-# Bantu in kenya HGDP
+# Bandu in kenya HGDP
 
 IDs_bandu <- c('"HGDP01408"', '"HGDP01415"', '"HGDP01411"', '"HGDP01416"', '"HGDP01405"', '"HGDP01412"',
                '"HGDP01418"', '"HGDP01406"', '"HGDP01413"', '"HGDP01419"')
@@ -193,7 +193,7 @@ IDs_biaka <- c('"HGDP00455"', '"HGDP00479"', '"HGDP00981"', '"HGDP00986"', '"HGD
 Bianka_CentralAfricaRepublic <- search_mongo(IDs_biaka) %>%
   limpieza_total()
 
-usethis::use_data(Bianka_CentralAfricaRepublic, overwrite = TRUE)
+usethis::use_data(Biaka_CentralAfricaRepublic, overwrite = TRUE)
 
 
 # Bougainville in Bougainville HGDP
@@ -329,6 +329,9 @@ Hezhen_China <- search_mongo(IDs_hezhen) %>%
 usethis::use_data(Hezhen_China, overwrite = TRUE)
 
 
+# Italian in Italy
+
+
 # Japanese in Japan HGDP
 
 IDs_japanese <- c('"HGDP00753"', '"HGDP00758"', '"HGDP00760"', '"HGDP00765"', '"HGDP00828"', '"HGDP00791"',
@@ -457,7 +460,7 @@ IDs_naxi <- c('"HGDP01340"', '"HGDP01341"', '"HGDP01346"', '"HGDP01339"', '"HGDP
 Naxi_China <- search_mongo(IDs_naxi) %>%
   limpieza_total()
 
-usethis::use_data(Mozabite_Algeria, overwrite = TRUE)
+usethis::use_data(Naxi_China, overwrite = TRUE)
 
 
 # Northern Han in China HGDP
@@ -500,10 +503,10 @@ IDs_palestinian <- c('"HGDP00676"', '"HGDP00739"', '"HGDP00741"', '"HGDP00746"',
                      '"HGDP00732"', '"HGDP00679"', '"HGDP00686"', '"HGDP00675"', '"HGDP00726"', '"HGDP00733"',
                      '"HGDP00738"', '"HGDP00740"', '"HGDP00745"', '"HGDP00694"', '"HGDP00699"', '"HGDP00682"',
                      '"HGDP00687"')
-Plestinian_Israel <- search_mongo(IDs_palestinian) %>%
+Palestinian_Israel <- search_mongo(IDs_palestinian) %>%
   limpieza_total()
 
-usethis::use_data(Plestinian_Israel, overwrite = TRUE)
+usethis::use_data(Palestinian_Israel, overwrite = TRUE)
 
 
 # Papuan in Papua New Guinea HGDP
@@ -645,8 +648,8 @@ IDs_uygur <- c('"HGDP01299"', '"HGDP01302"', '"HGDP01303"', '"HGDP01304"', '"HGD
                '"HGDP01298"', '"HGDP01301"')
 Uygur_China <- search_mongo(IDs_uygur) %>%
   limpieza_total()
-Uygur_China <- readRDS("Uygur_China.rds")
-Uygur_China <- NULL
+
+usethis::use_data(Uygur_China, overwrite = TRUE)
 
 
 # Xibo in China HGDP
@@ -689,7 +692,7 @@ IDs_yoruba <- c('"HGDP00943"', '"HGDP00924"', '"HGDP00929"', '"HGDP00931"', '"HG
 Yoruba_Nigeria <- search_mongo(IDs_yoruba) %>%
   limpieza_total()
 
-usethis::use_data(Yi_China, overwrite = TRUE)
+usethis::use_data(Yoruba_Nigeria, overwrite = TRUE)
 
 
 
