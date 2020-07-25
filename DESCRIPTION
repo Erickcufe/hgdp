@@ -1,13 +1,13 @@
 Package: hgdp
-Title: What the Package Does (One Line, Title Case)
+Title: Package with data cleaned from the Human Genome Diversity Panel (HGDP) dataset.
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Erick",
            family = "Cuevas",
            role = c("aut", "cre"),
            email = "erickcufe94@gmail.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           comment = c(Website = "https://erickcufe.github.io"))
+Description: data cleaned from the Human Genome Diversity Panel (HGDP) dataset.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
 Encoding: UTF-8
